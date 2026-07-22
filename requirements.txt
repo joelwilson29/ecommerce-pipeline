@@ -1,0 +1,9 @@
+pyspark==3.5.1
+pandas
+faker
+pyyaml
+boto3
+great-expectations
+pytest
+black
+flake8
