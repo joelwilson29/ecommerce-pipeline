@@ -23,8 +23,12 @@ def generate_customer(customer_id, today):
 
     random_days = random.randint(0, 365)
     created_date = today - timedelta(days=random_days)
-    registration_date = created_date + timedelta(days=random.randint(0, 30))
+    max_days = min(30, (today - created_date).days)
 
+    registration_date = created_date + timedelta(
+        days=random.randint(0, max_days)
+    )
+    
     customer = {
         "customer_id": customer_id,
         "first_name": fake.first_name(),

@@ -2,7 +2,7 @@ import random
 from datetime import datetime, timedelta
 import pandas as pd
 
-from utils import logger
+from utils.logger import logger
 
 ORDER_STATUSES = [
     "Pending",
@@ -12,6 +12,8 @@ ORDER_STATUSES = [
 ]
 
 ORDER_STATUS_WEIGHTS = [10, 15, 70, 5]
+
+OUTPUT_PATH = "data/bronze/orders.csv"
 
 def generate_order(order_id, customer_id, order_status, order_date):
     """
@@ -73,10 +75,10 @@ def main():
             orders.append(order)
 
     df = pd.DataFrame(orders)
-    df.to_csv("data/bronze/orders.csv", index=False)
+    df.to_csv(OUTPUT_PATH, index=False)
 
     logger.info(
-        f"Successfully generated {len(df)} orders and saved to data/bronze/orders.csv"
+        f"Successfully generated {len(df)} orders and saved to {OUTPUT_PATH}"
     )
 
 if __name__ == "__main__":
