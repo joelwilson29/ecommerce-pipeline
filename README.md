@@ -340,7 +340,7 @@ The Streamlit application will open in your browser.
 
 ## Dashboard Preview
 
-![E-Commerce Dashboard](images/Dashboard.png)
+![E-Commerce Dashboard](images/dashboard.png)
 
 ---
 
