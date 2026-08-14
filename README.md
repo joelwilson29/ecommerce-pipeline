@@ -342,6 +342,8 @@ The Streamlit application will open in your browser.
 
 ![E-Commerce Dashboard](images/dashboard.png)
 
+![E-Commerce Dashboard](images/Revenue_Dashboard.png)
+
 ---
 
 ## Key Engineering Concepts Demonstrated
