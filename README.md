@@ -343,7 +343,7 @@ The Streamlit application will open in your browser.
 Add screenshots of the Streamlit dashboard here.
 
 ```markdown
-![Ecommerce_Dashboard](image.png)
+![E-Commerce Dashboard](images/dashboard.png)
 ```
 
 ---
